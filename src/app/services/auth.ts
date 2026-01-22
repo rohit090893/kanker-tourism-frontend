@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class Auth {
 
   // private api='http://localhost:5000/api/auth';
-  private api = 'https://kanker-tourism-backend.onrender.com/api/hotels';
+  private api = 'https://kanker-tourism-backend.onrender.com/api/auth';
   constructor(private http:HttpClient){
 
   }

@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class User {
 
   // private api='http://localhost:5000/api/users';
-  private api = 'https://kanker-tourism-backend.onrender.com/api/hotels';
+  private api = 'https://kanker-tourism-backend.onrender.com/api/users';
   constructor(private http:HttpClient){
 
   }

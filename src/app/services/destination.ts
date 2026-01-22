@@ -5,7 +5,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class Destination {
   // api='http://localhost:5000/api/destinations';
-  private api = 'https://kanker-tourism-backend.onrender.com/api/hotels';
+  private api = 'https://kanker-tourism-backend.onrender.com/api/destinations';
   constructor(private http:HttpClient){
 
   }
