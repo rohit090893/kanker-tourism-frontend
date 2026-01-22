@@ -1,0 +1,46 @@
+<!-- <p>place-details works!</p> -->
+<div *ngIf="place"  class="container">
+  <h1>{{place.name}} </h1>
+  <p class="category">{{place.category}} </p>
+  <div class="gallery">
+    <img class="main-img" [src]="selectedImage">
+    <div class="thumbs">
+      <img *ngFor="let img of place.images"
+      [src]="img"
+      (click)="selectImage(img)"
+      >
+
+    </div>
+  </div>
+
+  <div class="info">
+    <h3>About</h3>
+    <p>{{place.description}} </p>
+    <p><b> Location</b>{{place.location}} </p>
+    <p><b> Best Season:</b>{{place.bestSeason}} </p>
+  </div>
+
+  <div class="map">
+    <iframe [src]="place.googleMap | safe" loading="lazy">
+
+    </iframe>
+  </div>
+
+  <div class="nearby" *ngIf="nearbyHotels.length">
+    <h2>Nearby Hotels</h2>
+    <div class="hotel-grid">
+      <div class="hotel-card" *ngFor="let h of nearbyHotels">
+        <img [src]="h.images?.[0]" alt="hotel">
+        <div class="hotel-info">
+          <h3>{{h.name}} </h3>
+          <p class="distance">📍 {{h.distance}} </p>
+          <p>{{h.location}} </p>
+          <p class="price"> {{h.price }}/night</p>
+          <p> {{h.rating}}</p>
+          <button>Send Enquiry</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

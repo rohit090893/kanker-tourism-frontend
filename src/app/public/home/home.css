@@ -1,0 +1,40 @@
+.hero{
+  height:80vh;
+  background:url('/assets/hero.jpg') center/cover no-repeat;
+  position:relative;
+}
+
+.overlay{
+  height:100%;
+  background:rgba(0,0,0,.55);
+  color:white;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.btn{
+  margin-top: 20px;
+  padding:12px 25px;
+  background: #16a34a;
+  color:white;
+  text-decoration: none;
+  border-radius: 30px;
+
+}
+.highlights{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  padding:40px;
+}
+
+.card{
+  background: #f0fdf4;
+  padding:30px;
+  text-align:center;
+  border-radius: 15px;
+  font-size: 18px;
+}

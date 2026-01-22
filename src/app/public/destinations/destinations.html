@@ -1,0 +1,11 @@
+<!-- <p>destinations works!</p> -->
+<h2 class="title">Tourist Destinations </h2>
+<div class="grid">
+  <div class="place-card" *ngFor="let d of destinations">
+    <img [src]="d.images?.[0]" alt="">
+    <h3>{{d.name}} </h3>
+    <p>{{d.category}} </p>
+    <a class="view" [routerLink]="['/destinations',d._id]">View Details</a>
+  </div>
+</div>
+

@@ -1,0 +1,98 @@
+/* Page base */
+p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Form container */
+.form {
+  max-width: 400px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+/* Inputs */
+.form input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.15);
+}
+
+/* Button */
+.form button {
+  width: 100%;
+  padding: 10px;
+  background: #3498db;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form button:hover {
+  background: #2980b9;
+}
+
+/* Users table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+table tr {
+  border-bottom: 1px solid #eee;
+}
+
+table tr:last-child {
+  border-bottom: none;
+}
+
+table td {
+  padding: 12px 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Zebra striping */
+table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+}

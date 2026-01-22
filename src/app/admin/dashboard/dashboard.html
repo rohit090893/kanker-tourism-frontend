@@ -1,0 +1,25 @@
+<p>dashboard works!</p>
+<div class="admin-layout">
+  <aside class="sidebar">
+    <h2> Explore kanker</h2>
+    <nav>
+      <a routerLink="/admin">Dashboard</a>
+      <a routerLink="/admin/destinations">Destinations</a>
+      <a routerLink="/admin/hotels">Hotels</a>
+      <a routerLink="/admin/bookings">Bookings</a>
+      <a routerLink="/admin/users">Users</a>
+    </nav>
+    <button class="logout" (click)="logout()">Logout</button>
+  </aside>
+
+  <main  class="content">
+    <div class="card">
+      <div class="card">🌍 Destinations<br><b> {{stats.destinations}}</b></div>
+      <div class="card">🏨 Hotels<br><b>{{stats.hotels}} </b></div>
+      <div class="card">📩 Bookings<br><b>{{stats.bookings}} </b> </div>
+      <div class="card">👤 Editors<br><b>{{stats.users}} </b> </div>
+    </div>
+    <router-outlet></router-outlet>
+  </main>
+
+</div>

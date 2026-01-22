@@ -1,0 +1,24 @@
+<p>hotels works!</p>
+<h2>Hotel Management</h2>
+<div class="form">
+  <input placeholder="Hotel Name" [(ngModel)]="form.name">
+  <input placeholder="Location" [(ngModel)]="form.location">
+  <input placeholder="Contact number" [(ngModel)]="form.contact">
+  <input type="number" placeholder="price per night" [(ngModel)]="form.price">
+  <input type="number" step="0.1" placeholder="Rating" [(ngModel)]="form.rating">
+  <input type="file" multiple (change)="onFileChange($event)">
+  <button (click)="saveHotel()">Add hotel</button>
+</div>
+
+<hr>
+
+<div class="hotel-list">
+  <div class="hotel-card" *ngFor="let h of hotels">
+    <h3>{{h.name}} </h3>
+    <p>{{h.location}} </p>
+    <p>{{h.price}} </p>
+    <p>{{h.rating}} </p>
+    <p>{{h.contact}} </p>
+    <button class="delete" (click)="deleteHotel(h._id)">Delete</button>
+  </div>
+</div>

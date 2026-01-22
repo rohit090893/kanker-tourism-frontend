@@ -1,0 +1,11 @@
+<!-- <p>hotels works!</p> -->
+<h2 class="title"> Hotels & Stays  </h2>
+<div class="hotel-grid">
+  <div class="hotel-card" *ngFor="let h of hotels">
+    <img [src]="h.images?.[0]" alt="">
+    <h3>{{h.name}} </h3>
+    <p>{{h.location}} </p>
+    <p class="price"> {{h.price}} /night </p>
+    <button> Send Enquiry</button>
+  </div>
+</div>

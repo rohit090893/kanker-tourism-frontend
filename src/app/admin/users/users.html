@@ -1,0 +1,14 @@
+<p>users works!</p>
+<h2>This is user addition page</h2>
+<div class="form">
+  <input type="text" placeholder="username" [(ngModel)]="formData.name">
+  <input type="text" placeholder="userEmail" [(ngModel)]="formData.email">
+  <input type="text" placeholder="userPassword" [(ngModel)]="formData.password">
+  <button (click)="createUser()">Save User</button>
+</div>
+<table *ngIf="isAdmin">
+  <tr *ngFor="let user of userData">
+    <td>{{ user.name }}</td>
+    <td>{{ user.email }}</td>
+  </tr>
+</table>
